@@ -9,11 +9,11 @@
   "player_character_id": "wurdren",
   "sidekick_enabled": false,
   "current_scene_id": "aftermath",
-  "open_decision": "What does Wurdren do after the workers escape and the cart damages the bathhouse rail?",
+  "open_decision": "What does Wurdren do after the charcoal is recovered and Hessa offers breakfast?",
   "time": {
     "day": 1,
     "period": "morning",
-    "elapsed_turns": 1
+    "elapsed_turns": 2
   },
   "player": {
     "hp": 28,
@@ -39,9 +39,9 @@
     "class_mechanics_status": "Not yet reconciled with 10Kings no-spellcasting; no spell actions activated"
   },
   "relationships": {
-    "hessa": "seen",
-    "keld": "seen",
-    "vena": "seen"
+    "hessa": "appreciative",
+    "keld": "grateful",
+    "vena": "cordial"
   },
   "clocks": {
     "bathhouse_damage": 1,
@@ -50,7 +50,8 @@
   "known_clues": [
     "The charcoal cart's brake was loose; it rolled toward the bathhouse gate.",
     "Two workers escaped after Wurdren shouted a warning.",
-    "The cart struck the outer rail and spilled some charcoal; the mule and workers are safe."
+    "The cart struck the outer rail and spilled some charcoal; the mule and workers are safe.",
+    "Most spilled charcoal was recoverable by hand; the bathhouse still has a broken rail and a separate fuel-allocation concern."
   ],
   "flags": {
     "cart_resolved": true,
@@ -59,17 +60,19 @@
     "bathhouse_rail_damaged": true,
     "charcoal_spilled": true,
     "mule_safe": true,
-    "wurdren_class_confirmed": true
+    "wurdren_class_confirmed": true,
+    "charcoal_salvaged": true,
+    "yard_cleared": true
   },
   "roll_log": [],
   "safety": {
     "lines": [],
     "veils": []
   },
-  "save_revision": 1,
-  "last_journal_entry": "S01-T001",
+  "save_revision": 2,
+  "last_journal_entry": "S01-T002",
   "unresolved": [
-    "Check on people and mule after the accident",
+    "Decide whether to rest for breakfast or investigate the rail and delayed charcoal delivery",
     "Find out why the bathhouse is short of fuel",
     "Decide later how cleric magic mechanics fit 10Kings, without interrupting the immediate scene"
   ],
@@ -78,5 +81,5 @@
     "Tamsin Vale and Pip Merrow belong to another campaign.",
     "Player confirms Wurdren is a dwarf cleric; his class abilities and ancestry traits are pending reconciliation with 10Kings world rules."
   ],
-  "journal_sequence": 1
+  "journal_sequence": 2
 }
