@@ -1,0 +1,11 @@
+name: Validate campaign content
+on:
+  push:
+  pull_request:
+jobs:
+  campaign-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links, characters, creatures, scenes and save
+        run: python3 tools/validate_content.py

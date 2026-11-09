@@ -1,0 +1,218 @@
+{
+  "schema_version": "0.1",
+  "adventure_id": "01-vanishing-mile",
+  "recommended_level": 2,
+  "start_scene": "briefing",
+  "clock": {
+    "name": "bell_attention",
+    "max": 4,
+    "at_max": "Fog thickens and adds a 10-minute travel detour; safe Reedwater path remains available. Does not close exits."
+  },
+  "scenes": [
+    {
+      "id": "briefing",
+      "location": "Briarford / Soot & Thistle",
+      "player_prompt": "A mapmaker has gone missing. The keeper offers pay for proof of the changing road.",
+      "essential_clues": [
+        "The surveyor Elowen Rusk left for the old tollhouse at dusk.",
+        "The road can be approached by the north gate or reed track."
+      ],
+      "optional_clues": [
+        "Orren Fen has conflicting maps."
+      ],
+      "exits": [
+        "archive",
+        "north_gate",
+        "reed_track"
+      ],
+      "encounter_ids": [],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "archive",
+      "location": "Guild Survey Room",
+      "player_prompt": "Four maps of the same stretch of road disagree by exactly one mile.",
+      "essential_clues": [
+        "Older surveys show an unmarked stone near the flooded route.",
+        "A sketch notes a phrase: 'A road is kept by those who return.'"
+      ],
+      "optional_clues": [
+        "Lio Quill moved an iron marker and feels responsible.",
+        "A map scrap is useful for redirecting the bell."
+      ],
+      "exits": [
+        "briefing",
+        "north_gate",
+        "reed_track"
+      ],
+      "encounter_ids": [],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "north_gate",
+      "location": "North gate of the vanishing mile",
+      "player_prompt": "The worn milestone gives two distances at once. A bell rings once from behind fog.",
+      "essential_clues": [
+        "Fresh boot tracks lead toward the ruined wayhouse.",
+        "An older track slips toward the broken milestone."
+      ],
+      "optional_clues": [
+        "A lantern-wisp is drawn to exposed bell metal."
+      ],
+      "exits": [
+        "reed_track",
+        "milestone",
+        "wayhouse"
+      ],
+      "encounter_ids": [
+        "lantern_wisp",
+        "ash_mite"
+      ],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "reed_track",
+      "location": "Reedwater fen path",
+      "player_prompt": "The reeds part around a dry line of stepping stones. Something large moves in the water.",
+      "essential_clues": [
+        "The stepping stones lead to the unmarked milestone or tollhouse.",
+        "A handbell can be heard beneath the water."
+      ],
+      "optional_clues": [
+        "Mire wolf den can be skirted without fighting.",
+        "Nessa Darr knows a safe boat route."
+      ],
+      "exits": [
+        "north_gate",
+        "milestone",
+        "wayhouse"
+      ],
+      "encounter_ids": [
+        "mire_wolf"
+      ],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "milestone",
+      "location": "Abandoned milestone",
+      "player_prompt": "An unmarked stone stands in grass that seems to lean toward a sound you cannot hear.",
+      "essential_clues": [
+        "The stone is a relay for the tollhouse bell; its grooves match the keeper's lever.",
+        "Inscription: 'A road is kept by those who return.'"
+      ],
+      "optional_clues": [
+        "The old relay may stabilize a new path but flood some reedland.",
+        "Elowen scratched twelve tally marks in the stone."
+      ],
+      "exits": [
+        "reed_track",
+        "north_gate",
+        "wayhouse",
+        "chamber"
+      ],
+      "encounter_ids": [],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "wayhouse",
+      "location": "Ruined tollhouse / upper room",
+      "player_prompt": "Someone has recently lit a lamp beneath the broken rafters. A survey cord is tied to the stairs.",
+      "essential_clues": [
+        "Elowen is trapped in a resonance loop beneath the floor.",
+        "The bell may be silenced, renewed by a voluntary memory, or rerouted through the milestone.",
+        "A page of Elowen's notes records the phrase: 'A road is kept by those who return.'"
+      ],
+      "optional_clues": [
+        "Bell-Husk listens to a steady three-beat handbell rhythm.",
+        "A rusty lever operates the lower chamber striker."
+      ],
+      "exits": [
+        "north_gate",
+        "milestone",
+        "chamber"
+      ],
+      "encounter_ids": [
+        "bell_husk",
+        "roadknife"
+      ],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "chamber",
+      "location": "Lower bell chamber",
+      "player_prompt": "Beneath the road hangs a dark bell too large for the room. Its keeper stands between you and a rusted lever.",
+      "essential_clues": [
+        "Elowen is alive but tethered to the bell's memory-plate.",
+        "Three solutions exist: memory exchange, striker destruction, or relay redirection; retreat remains possible."
+      ],
+      "optional_clues": [
+        "The Gaunt Toller cannot leave the entrance threshold.",
+        "The relay phrase calms the keeper long enough for a hearing."
+      ],
+      "exits": [
+        "wayhouse",
+        "milestone",
+        "ending_renew",
+        "ending_break",
+        "ending_relay",
+        "ending_retreat"
+      ],
+      "encounter_ids": [
+        "gaunt_toller"
+      ],
+      "clock_on_entry": 0
+    },
+    {
+      "id": "ending_renew",
+      "location": "Briarford after a renewed toll",
+      "player_prompt": "The old road holds its length for another season. Something personally meaningful has been surrendered to keep it so.",
+      "essential_clues": [
+        "Elowen returns; the bell has been charged by an expressly chosen memory."
+      ],
+      "optional_clues": [],
+      "exits": [],
+      "encounter_ids": [],
+      "ending": true
+    },
+    {
+      "id": "ending_break",
+      "location": "Briarford after the bell breaks",
+      "player_prompt": "The lost memories return and so does Elowen, but the old mile no longer answers any map.",
+      "essential_clues": [
+        "The route is unstable; Reedwater boats become necessary."
+      ],
+      "optional_clues": [],
+      "exits": [],
+      "encounter_ids": [],
+      "ending": true
+    },
+    {
+      "id": "ending_relay",
+      "location": "Briarford after redirection",
+      "player_prompt": "The road settles on a new line through the reeds, and the memory toll ends—for now.",
+      "essential_clues": [
+        "Elowen returns; part of the reed track is now underwater."
+      ],
+      "optional_clues": [],
+      "exits": [],
+      "encounter_ids": [],
+      "ending": true
+    },
+    {
+      "id": "ending_retreat",
+      "location": "Briarford after retreat",
+      "player_prompt": "You return with what you learned but without freeing Elowen. The situation remains unresolved.",
+      "essential_clues": [
+        "The mystery remains available for a second attempt."
+      ],
+      "optional_clues": [],
+      "exits": [
+        "archive",
+        "north_gate",
+        "reed_track"
+      ],
+      "encounter_ids": [],
+      "ending": false
+    }
+  ]
+}

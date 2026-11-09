@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1",
+  "threats": [
+    {
+      "id": "runaway_cart",
+      "kind": "environment",
+      "dc": 13,
+      "lead_time": "one immediate player decision before collision",
+      "success": "Save people and frontage, preserve most charcoal",
+      "strong_success": "Also preserve entire load and calm mule",
+      "failure": "Workers escape; rail bends or some charcoal spills; a risky intercept may cost 1d4 HP",
+      "severe_failure": "Large spill and bent rail; no automatic death",
+      "noncombat_options": [
+        "Warn and step aside",
+        "Grab bridle",
+        "Secure brake",
+        "Wedge wheels",
+        "Clear gate"
+      ],
+      "lethal": false
+    },
+    {
+      "id": "shoving_match",
+      "kind": "nonlethal opposition",
+      "ac": 12,
+      "hp": 10,
+      "speed": 30,
+      "attack": {
+        "to_hit": 3,
+        "damage": "1d4+1",
+        "range": "melee 5 feet"
+      },
+      "goal": "Enforce paid dispatch without losing job",
+      "morale": "Backs down after substantial loss or clear alternative",
+      "noncombat_options": [
+        "Negotiate dispatch",
+        "Present evidence",
+        "Leave peacefully"
+      ],
+      "lethal": false
+    },
+    {
+      "id": "slick_masonry",
+      "kind": "environment",
+      "dc": 13,
+      "success": "Repair flue carefully",
+      "failure": "Lose time or materials, partial repair possible",
+      "noncombat_options": [
+        "Ask Vena for help",
+        "Use wedge and lashings",
+        "Pay for sheet metal",
+        "Return after preparing"
+      ],
+      "lethal": false
+    }
+  ]
+}

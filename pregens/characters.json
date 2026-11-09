@@ -1,0 +1,359 @@
+{
+  "version": "0.1",
+  "system": "ashen-road-d20",
+  "heroes": [
+    {
+      "id": "mara",
+      "name": "Mara Thorn",
+      "archetype": "Guardian / fighter",
+      "level": 2,
+      "ability_scores": {
+        "str": 16,
+        "dex": 12,
+        "con": 14,
+        "int": 10,
+        "wis": 12,
+        "cha": 10
+      },
+      "hp_max": 22,
+      "ac": 17,
+      "speed": 30,
+      "initiative": 1,
+      "hit_die": "d10",
+      "hit_dice_total": 2,
+      "proficient_saves": [
+        "str",
+        "con"
+      ],
+      "skills": {
+        "athletics": 5,
+        "perception": 3,
+        "survival": 3,
+        "insight": 3
+      },
+      "attacks": [
+        {
+          "name": "Long Sword",
+          "to_hit": 5,
+          "damage": "1d8+3",
+          "range": "melee 5 ft"
+        },
+        {
+          "name": "Handaxe",
+          "to_hit": 5,
+          "damage": "1d6+3",
+          "range": "melee or thrown 20/60 ft"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Defense Style",
+          "use": "passive",
+          "effect": "+1 AC while wearing armor; already included in AC 17",
+          "recharge": "unlimited"
+        },
+        {
+          "name": "Second Wind",
+          "use": "bonus action",
+          "effect": "Heal 1d10+2 HP",
+          "recharge": "short rest",
+          "charges": 1
+        },
+        {
+          "name": "Action Surge",
+          "use": "on your turn",
+          "effect": "Gain one additional action this turn",
+          "recharge": "short rest",
+          "charges": 1
+        }
+      ],
+      "spell_dc": null,
+      "spell_attack": null,
+      "spell_slots": 0,
+      "known_spells": [],
+      "inventory": [
+        "long sword",
+        "shield",
+        "chain shirt",
+        "handaxe",
+        "healing potion",
+        "rope 50 ft",
+        "lantern",
+        "2 oil flasks",
+        "2 rations"
+      ],
+      "silver": 12,
+      "playstyle": "Durable frontline, direct choices and good second chances",
+      "hook": "Was once a Warden, left after an incident no one will discuss."
+    },
+    {
+      "id": "iven",
+      "name": "Iven Kest",
+      "archetype": "Scout / rogue",
+      "level": 2,
+      "ability_scores": {
+        "str": 8,
+        "dex": 16,
+        "con": 14,
+        "int": 14,
+        "wis": 12,
+        "cha": 10
+      },
+      "hp_max": 17,
+      "ac": 15,
+      "speed": 30,
+      "initiative": 3,
+      "hit_die": "d8",
+      "hit_dice_total": 2,
+      "proficient_saves": [
+        "dex",
+        "int"
+      ],
+      "skills": {
+        "acrobatics": 5,
+        "sleight_of_hand": 5,
+        "stealth": 5,
+        "investigation": 4,
+        "perception": 3,
+        "deception": 2
+      },
+      "attacks": [
+        {
+          "name": "Dagger",
+          "to_hit": 5,
+          "damage": "1d4+3",
+          "range": "melee or thrown 20/60 ft"
+        },
+        {
+          "name": "Shortbow",
+          "to_hit": 5,
+          "damage": "1d6+3",
+          "range": "ranged 80/320 ft"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Sneak Attack",
+          "use": "once per turn",
+          "effect": "Deal +1d6 damage on a hit with a finesse/ranged attack if you have advantage, or an ally is adjacent to target and you have no disadvantage",
+          "recharge": "unlimited"
+        },
+        {
+          "name": "Cunning Action",
+          "use": "bonus action",
+          "effect": "Dash, Disengage or Hide",
+          "recharge": "unlimited"
+        }
+      ],
+      "spell_dc": null,
+      "spell_attack": null,
+      "spell_slots": 0,
+      "known_spells": [],
+      "inventory": [
+        "dagger",
+        "shortbow",
+        "20 arrows",
+        "leather jerkin",
+        "lockpicks",
+        "healing potion",
+        "rope 50 ft",
+        "2 rations"
+      ],
+      "silver": 14,
+      "playstyle": "Clever stealth, finding hidden angles and discovering secrets",
+      "hook": "A vanished road once saved your life, but you cannot explain how."
+    },
+    {
+      "id": "tamsin",
+      "name": "Tamsin Vale",
+      "archetype": "Trailwarden / ranger",
+      "level": 2,
+      "ability_scores": {
+        "str": 12,
+        "dex": 16,
+        "con": 14,
+        "int": 10,
+        "wis": 14,
+        "cha": 8
+      },
+      "hp_max": 20,
+      "ac": 15,
+      "speed": 30,
+      "initiative": 3,
+      "hit_die": "d10",
+      "hit_dice_total": 2,
+      "proficient_saves": [
+        "str",
+        "dex"
+      ],
+      "skills": {
+        "survival": 4,
+        "perception": 4,
+        "nature": 2,
+        "stealth": 5,
+        "animal_handling": 4
+      },
+      "attacks": [
+        {
+          "name": "Longbow",
+          "to_hit": 5,
+          "damage": "1d8+3",
+          "range": "ranged 150/600 ft"
+        },
+        {
+          "name": "Dagger",
+          "to_hit": 5,
+          "damage": "1d4+3",
+          "range": "melee or thrown 20/60 ft"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Mark Quarry",
+          "use": "bonus action",
+          "effect": "Choose a creature you can see; for 1 minute once per turn on a weapon hit add 1d4 damage to that target. Ends if target drops or you mark another.",
+          "recharge": "short rest",
+          "charges": 1
+        },
+        {
+          "name": "Trail Sense",
+          "use": "exploration",
+          "effect": "Once per scene, gain advantage on one Survival check to track a route, identify passage or avoid a natural hazard",
+          "recharge": "scene",
+          "charges": 1
+        }
+      ],
+      "spell_dc": null,
+      "spell_attack": null,
+      "spell_slots": 0,
+      "known_spells": [],
+      "inventory": [
+        "longbow",
+        "20 arrows",
+        "dagger",
+        "leather armor",
+        "healing potion",
+        "field compass",
+        "rope 50 ft",
+        "2 rations"
+      ],
+      "silver": 10,
+      "playstyle": "Outdoors, tracking, careful ranged combat",
+      "hook": "A lost mile on your mother's map appears to be reappearing."
+    },
+    {
+      "id": "sera",
+      "name": "Sera Flint",
+      "archetype": "Resonance scholar / mage",
+      "level": 2,
+      "ability_scores": {
+        "str": 8,
+        "dex": 14,
+        "con": 14,
+        "int": 16,
+        "wis": 12,
+        "cha": 10
+      },
+      "hp_max": 14,
+      "ac": 12,
+      "speed": 30,
+      "initiative": 2,
+      "hit_die": "d6",
+      "hit_dice_total": 2,
+      "proficient_saves": [
+        "int",
+        "wis"
+      ],
+      "skills": {
+        "arcana": 5,
+        "investigation": 5,
+        "history": 5,
+        "perception": 3,
+        "insight": 3
+      },
+      "attacks": [
+        {
+          "name": "Quarterstaff",
+          "to_hit": 1,
+          "damage": "1d6-1",
+          "range": "melee 5 ft"
+        },
+        {
+          "name": "Spark",
+          "to_hit": 5,
+          "damage": "1d10",
+          "range": "ranged spell 60 ft"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Arcane Recovery",
+          "use": "short rest",
+          "effect": "Once per long rest after a short rest recover one spent level-1 spell slot",
+          "recharge": "long rest",
+          "charges": 1
+        }
+      ],
+      "spell_dc": 13,
+      "spell_attack": 5,
+      "spell_slots": 3,
+      "known_spells": [
+        "Spark",
+        "Whisperlight",
+        "Mage Hand",
+        "Minor Illusion",
+        "Arcane Ward",
+        "Sleep Dust",
+        "Detect Resonance",
+        "Entangling Thread"
+      ],
+      "inventory": [
+        "quarterstaff",
+        "spellbook",
+        "pocket lantern",
+        "healing potion",
+        "chalk",
+        "2 rations"
+      ],
+      "silver": 11,
+      "playstyle": "Investigate magic, solve unusual problems, fragile in a fight",
+      "hook": "The tollhouse bell rings in a pattern found in your teacher's notebooks."
+    }
+  ],
+  "sidekick": {
+    "id": "pip",
+    "name": "Pip Merrow",
+    "role": "optional sidekick",
+    "level": 1,
+    "hp_max": 11,
+    "ac": 13,
+    "speed": 30,
+    "initiative": 2,
+    "attacks": [
+      {
+        "name": "Sling",
+        "to_hit": 3,
+        "damage": "1d4+1",
+        "range": "ranged 30/120 ft"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Helpful",
+        "effect": "Use action to Help hero; must have plausible line of sight and capacity. Can instead attack once."
+      },
+      {
+        "name": "First Aid",
+        "effect": "Once per adventure, use action to stabilize adjacent dying character without a roll",
+        "charges": 1
+      }
+    ],
+    "inventory": [
+      "sling",
+      "5 stones",
+      "bandages",
+      "dry bread"
+    ],
+    "behavior": "Follow player's general tactics, avoid stealing crucial choices, retreat when badly hurt."
+  }
+}

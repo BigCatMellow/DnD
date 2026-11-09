@@ -1,0 +1,210 @@
+{
+  "version": "0.1",
+  "system": "ashen-road-d20",
+  "creatures": [
+    {
+      "id": "ash_mite",
+      "name": "Ash Mite",
+      "tier": "light",
+      "ac": 12,
+      "hp": 6,
+      "speed": 25,
+      "initiative": 2,
+      "passive_perception": 9,
+      "attacks": [
+        {
+          "name": "Cinder Bite",
+          "to_hit": 3,
+          "damage": "1d4+1",
+          "range": "melee 5 ft",
+          "type": "piercing"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Scurry",
+          "rule": "May Disengage as a bonus action; if it escapes into a crack, it cannot attack from there."
+        }
+      ],
+      "goal": "Feed on a warm lantern and flee.",
+      "morale": "Flees after taking damage.",
+      "noncombat": "Distract with lantern oil or leave the light unguarded.",
+      "tags": [
+        "beast",
+        "ash"
+      ]
+    },
+    {
+      "id": "roadknife",
+      "name": "Roadknife Toll-Robber",
+      "tier": "light",
+      "ac": 12,
+      "hp": 11,
+      "speed": 30,
+      "initiative": 2,
+      "passive_perception": 11,
+      "attacks": [
+        {
+          "name": "Rusty Blade",
+          "to_hit": 3,
+          "damage": "1d6+1",
+          "range": "melee 5 ft",
+          "type": "slashing"
+        },
+        {
+          "name": "Sling",
+          "to_hit": 3,
+          "damage": "1d4+1",
+          "range": "ranged 30/120 ft",
+          "type": "bludgeoning"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Cornered",
+          "rule": "May Disengage as a bonus action only when at half HP or lower."
+        }
+      ],
+      "goal": "Acquire food and coins, not die for a toll.",
+      "morale": "Surrenders or flees at half HP if given a route.",
+      "noncombat": "Food, persuasion or showing a Warden token can avoid combat.",
+      "tags": [
+        "humanoid"
+      ]
+    },
+    {
+      "id": "mire_wolf",
+      "name": "Mire Wolf",
+      "tier": "moderate",
+      "ac": 13,
+      "hp": 14,
+      "speed": 40,
+      "initiative": 2,
+      "passive_perception": 13,
+      "attacks": [
+        {
+          "name": "Jaw",
+          "to_hit": 4,
+          "damage": "1d6+2",
+          "range": "melee 5 ft",
+          "type": "piercing"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Dragging Snap",
+          "rule": "Once per encounter after a hit, target makes DC12 Strength save or falls Prone."
+        }
+      ],
+      "goal": "Defend its litter near the flood line.",
+      "morale": "Flees when bloodied unless trapped.",
+      "noncombat": "Circle the den or offer food from a safe distance.",
+      "tags": [
+        "beast",
+        "fen"
+      ]
+    },
+    {
+      "id": "lantern_wisp",
+      "name": "Lantern Wisp",
+      "tier": "light",
+      "ac": 14,
+      "hp": 8,
+      "speed": 0,
+      "fly_speed": 40,
+      "initiative": 3,
+      "passive_perception": 12,
+      "attacks": [
+        {
+          "name": "Cold Flash",
+          "to_hit": 4,
+          "damage": "1d4+2",
+          "range": "ranged 30 ft",
+          "type": "radiant"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Flicker",
+          "rule": "Can move through gaps at least one inch wide but cannot cross solid stone; when struck by water takes 2 extra damage."
+        }
+      ],
+      "goal": "Lure the unwary toward exposed bell metal.",
+      "morale": "Disperses at 3 HP or lower.",
+      "noncombat": "Cover the light or use the route's old bell words to calm it.",
+      "tags": [
+        "spirit",
+        "light"
+      ]
+    },
+    {
+      "id": "bell_husk",
+      "name": "Bell-Husk",
+      "tier": "moderate",
+      "ac": 13,
+      "hp": 18,
+      "speed": 25,
+      "initiative": 0,
+      "passive_perception": 10,
+      "attacks": [
+        {
+          "name": "Iron Knuckles",
+          "to_hit": 4,
+          "damage": "1d6+2",
+          "range": "melee 5 ft",
+          "type": "bludgeoning"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Off-Key Peal",
+          "rule": "Once per encounter as action: a creature within 20 ft makes DC12 Wisdom save or is Disoriented until end of its next turn."
+        }
+      ],
+      "goal": "Prevent theft of the chamber's memory-plate.",
+      "morale": "Never pursues beyond the chamber threshold.",
+      "noncombat": "Can be delayed by striking the chamber handbell in a steady 3-beat rhythm.",
+      "tags": [
+        "construct",
+        "resonance"
+      ]
+    },
+    {
+      "id": "gaunt_toller",
+      "name": "Gaunt Toller",
+      "tier": "elite",
+      "ac": 14,
+      "hp": 27,
+      "speed": 30,
+      "initiative": 1,
+      "passive_perception": 12,
+      "attacks": [
+        {
+          "name": "Toll Staff",
+          "to_hit": 4,
+          "damage": "1d8+2",
+          "range": "melee 5 ft",
+          "type": "bludgeoning"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Ninth Peal",
+          "rule": "Once per encounter as action, unless bell lever jammed: one creature within 30 ft makes DC12 Wisdom save or is Frightened until end of its next turn."
+        },
+        {
+          "name": "Bound to Threshold",
+          "rule": "Cannot willingly cross the old tollhouse entrance; stops attacking a creature that retreats beyond it."
+        }
+      ],
+      "goal": "Keep the failing tollhouse bell ringing until the ward is renewed.",
+      "morale": "Offers a bargain after taking 13 or more damage; does not pursue retreat.",
+      "noncombat": "Present a valid memory-offering, discover and speak its old toll formula, or disable the striker via environment.",
+      "tags": [
+        "construct",
+        "guardian",
+        "resonance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1",
+  "campaign_id": "wurdren-road",
+  "world": "Two Sons / 10Kings",
+  "world_source_commit": "e2d9b690ca4f5a1d2344f0e133f8eb1a5fdf6eed",
+  "continuity": "provisional gameplay-only",
+  "status": "active",
+  "adventure_id": "01-bathhouse-and-cart",
+  "player_character_id": "wurdren",
+  "sidekick_enabled": false,
+  "current_scene_id": "aftermath",
+  "open_decision": "What does Wurdren do after the charcoal is recovered and Hessa offers breakfast?",
+  "time": {
+    "day": 1,
+    "period": "morning",
+    "elapsed_turns": 2
+  },
+  "player": {
+    "hp": 28,
+    "max_hp": 28,
+    "hit_dice_remaining": 3,
+    "ability_uses": {
+      "Catch Breath": 1,
+      "Steady Guard": 1
+    },
+    "inventory": [
+      "weathered sword",
+      "walking knife",
+      "patched protective travel coat",
+      "25 feet of rope",
+      "needle and waxed thread",
+      "waterskin",
+      "bread"
+    ],
+    "silver": 8,
+    "conditions": [],
+    "ancestry": "dwarf",
+    "class": "cleric",
+    "class_mechanics_status": "Not yet reconciled with 10Kings no-spellcasting; no spell actions activated"
+  },
+  "relationships": {
+    "hessa": "appreciative",
+    "keld": "grateful",
+    "vena": "cordial"
+  },
+  "clocks": {
+    "bathhouse_damage": 1,
+    "supply_pressure": 0
+  },
+  "known_clues": [
+    "The charcoal cart's brake was loose; it rolled toward the bathhouse gate.",
+    "Two workers escaped after Wurdren shouted a warning.",
+    "The cart struck the outer rail and spilled some charcoal; the mule and workers are safe.",
+    "Most spilled charcoal was recoverable by hand; the bathhouse still has a broken rail and a separate fuel-allocation concern."
+  ],
+  "flags": {
+    "cart_resolved": true,
+    "workers_warned": true,
+    "workers_safe": true,
+    "bathhouse_rail_damaged": true,
+    "charcoal_spilled": true,
+    "mule_safe": true,
+    "wurdren_class_confirmed": true,
+    "charcoal_salvaged": true,
+    "yard_cleared": true
+  },
+  "roll_log": [],
+  "safety": {
+    "lines": [],
+    "veils": []
+  },
+  "save_revision": 2,
+  "last_journal_entry": "S01-T002",
+  "unresolved": [
+    "Decide whether to rest for breakfast or investigate the rail and delayed charcoal delivery",
+    "Find out why the bathhouse is short of fuel",
+    "Decide later how cleric magic mechanics fit 10Kings, without interrupting the immediate scene"
+  ],
+  "notes": [
+    "Wurdren biography not fixed.",
+    "Tamsin Vale and Pip Merrow belong to another campaign.",
+    "Player confirms Wurdren is a dwarf cleric; his class abilities and ancestry traits are pending reconciliation with 10Kings world rules."
+  ],
+  "journal_sequence": 2
+}
