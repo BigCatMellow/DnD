@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.1",
+  "adventure_id": "01-bathhouse-and-cart",
+  "title": "The Bathhouse and the Cart",
+  "status": "provisional gameplay-only",
+  "start_scene": "yard",
+  "scenes": [
+    {
+      "id": "yard",
+      "location": "Darkroot Gulch bathhouse forecourt",
+      "essential_clues": [
+        "Loaded charcoal dray is rolling downhill; an open side strip reaches its flank.",
+        "The bathhouse door behind Wurdren is clear; workers near the gate can be warned."
+      ],
+      "exits": [
+        "aftermath",
+        "washroom"
+      ],
+      "hazards": [
+        "runaway_cart"
+      ]
+    },
+    {
+      "id": "aftermath",
+      "location": "Bathhouse yard",
+      "essential_clues": [
+        "Bathhouse serves charcoal workers and forest wardens.",
+        "A supply load is on a new priority contract."
+      ],
+      "exits": [
+        "washroom",
+        "kiln_lane",
+        "sluice",
+        "ending_open",
+        "ending_closed"
+      ],
+      "hazards": []
+    },
+    {
+      "id": "washroom",
+      "location": "Bathhouse stove room",
+      "essential_clues": [
+        "A shared meal is available and the bathhouse is losing heat through a damaged flue.",
+        "A partial opening might be possible with repairs and agreement."
+      ],
+      "exits": [
+        "aftermath",
+        "kiln_lane",
+        "sluice",
+        "ending_open",
+        "ending_closed"
+      ],
+      "hazards": []
+    },
+    {
+      "id": "kiln_lane",
+      "location": "Charcoal kiln and dray yard",
+      "essential_clues": [
+        "New paid contracts send charcoal toward higher-paying Ironcrest work.",
+        "Drivers are following actual orders, not necessarily committing theft."
+      ],
+      "exits": [
+        "aftermath",
+        "washroom",
+        "sluice",
+        "ending_open",
+        "ending_closed"
+      ],
+      "hazards": [
+        "shoving_match"
+      ]
+    },
+    {
+      "id": "sluice",
+      "location": "Old water channel behind the bathhouse",
+      "essential_clues": [
+        "A practical repair or insulation can reduce fuel demand.",
+        "A safe repair needs assistance, materials and time."
+      ],
+      "exits": [
+        "aftermath",
+        "washroom",
+        "kiln_lane",
+        "ending_open",
+        "ending_closed"
+      ],
+      "hazards": [
+        "slick_masonry"
+      ]
+    },
+    {
+      "id": "ending_open",
+      "location": "Bathhouse at the evening meal",
+      "essential_clues": [
+        "A locally negotiated limited heating arrangement permits the bathhouse to open; participants remember who helped."
+      ],
+      "exits": [],
+      "hazards": [],
+      "ending": true
+    },
+    {
+      "id": "ending_closed",
+      "location": "Bathhouse in the evening",
+      "essential_clues": [
+        "The bathhouse shuts temporarily; townspeople make their own workarounds and the relationships endure."
+      ],
+      "exits": [],
+      "hazards": [],
+      "ending": true
+    }
+  ]
+}

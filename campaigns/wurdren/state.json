@@ -1,0 +1,65 @@
+{
+  "schema_version": "0.1",
+  "campaign_id": "wurdren-road",
+  "world": "Two Sons / 10Kings",
+  "world_source_commit": "e2d9b690ca4f5a1d2344f0e133f8eb1a5fdf6eed",
+  "continuity": "provisional gameplay-only",
+  "status": "active",
+  "adventure_id": "01-bathhouse-and-cart",
+  "player_character_id": "wurdren",
+  "sidekick_enabled": false,
+  "current_scene_id": "yard",
+  "open_decision": "How Wurdren responds to the rolling charcoal cart",
+  "time": {
+    "day": 1,
+    "period": "morning",
+    "elapsed_turns": 0
+  },
+  "player": {
+    "hp": 28,
+    "max_hp": 28,
+    "hit_dice_remaining": 3,
+    "ability_uses": {
+      "Catch Breath": 1,
+      "Steady Guard": 1
+    },
+    "inventory": [
+      "weathered sword",
+      "walking knife",
+      "patched protective travel coat",
+      "25 feet of rope",
+      "needle and waxed thread",
+      "waterskin",
+      "bread"
+    ],
+    "silver": 8,
+    "conditions": []
+  },
+  "relationships": {
+    "hessa": "unmet",
+    "keld": "unmet",
+    "vena": "unmet"
+  },
+  "clocks": {
+    "bathhouse_damage": 0,
+    "supply_pressure": 0
+  },
+  "known_clues": [],
+  "flags": {},
+  "roll_log": [],
+  "safety": {
+    "lines": [],
+    "veils": []
+  },
+  "save_revision": 0,
+  "last_journal_entry": "setup-only",
+  "unresolved": [
+    "Act on runaway cart",
+    "Investigate bathhouse fuel dispute"
+  ],
+  "notes": [
+    "No world actions or dice yet.",
+    "Wurdren biography not fixed.",
+    "Tamsin Vale and Pip Merrow belong to another campaign."
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1",
+  "id": "wurdren",
+  "name": "Wurdren",
+  "status": "provisional game-only mechanics, biography open",
+  "level": 3,
+  "archetype": "seasoned traveler",
+  "proficiency_bonus": 2,
+  "ability_scores": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 12
+  },
+  "hp_max": 28,
+  "ac": 15,
+  "speed": 30,
+  "initiative": 1,
+  "hit_die": "d10",
+  "hit_dice_total": 3,
+  "skills": {
+    "athletics": 4,
+    "perception": 4,
+    "survival": 4,
+    "insight": 4,
+    "persuasion": 3,
+    "investigation": 2,
+    "animal_handling": 4
+  },
+  "proficient_saves": [
+    "str",
+    "con"
+  ],
+  "attacks": [
+    {
+      "name": "weathered sword",
+      "to_hit": 4,
+      "damage": "1d8+2",
+      "range": "melee 5 feet"
+    },
+    {
+      "name": "walking knife",
+      "to_hit": 4,
+      "damage": "1d4+2",
+      "range": "melee or thrown 20/60 feet"
+    }
+  ],
+  "abilities": [
+    {
+      "name": "Catch Breath",
+      "effect": "Bonus action, recover 1d8+3 HP",
+      "recharge": "short rest",
+      "charges": 1
+    },
+    {
+      "name": "Steady Guard",
+      "effect": "Reaction, +2 AC against one visible attack before roll",
+      "recharge": "short rest",
+      "charges": 1
+    }
+  ],
+  "inventory": [
+    "weathered sword",
+    "walking knife",
+    "patched protective travel coat",
+    "25 feet of rope",
+    "needle and waxed thread",
+    "waterskin",
+    "bread"
+  ],
+  "silver": 8,
+  "notes": [
+    "No exact age, origin or family defined.",
+    "Stats, gear and money are playable fiction only.",
+    "No spellcasting."
+  ]
+}
