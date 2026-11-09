@@ -68,5 +68,39 @@ def validate():
                     f"Broken link in {md.relative_to(ROOT)}: {href}")
     print(f"PASS: {len(heroes)} heroes, {len(creatures)} monsters, {len(scenes)} reachable scenes; save and links valid")
 
+def validate_wurdren():
+    hero=load("worlds/10kings/character.json")
+    game=load("worlds/10kings/adventures/01-bathhouse-and-cart/scenes.json")
+    threats=load("worlds/10kings/adventures/01-bathhouse-and-cart/hazards.json")
+    save=load("campaigns/wurdren/state.json")
+    require(hero["id"] == "wurdren" and hero["hp_max"] > 0 and hero["ac"] >= 10, "Invalid Wurdren sheet")
+    require(hero["level"] == 3 and len(hero["ability_scores"]) == 6, "Wurdren ability mismatch")
+    require(not any("spell" in k for k in hero.keys()), "Wurdren must not have spellcasting")
+    require(hero["attacks"] and hero["inventory"], "Missing grounded Wurdren loadout")
+    nodes={x["id"]:x for x in game["scenes"]}
+    require(len(nodes) == len(game["scenes"]), "Duplicate Wurdren scene IDs")
+    hazard_ids={x["id"] for x in threats["threats"]}
+    require(len(hazard_ids) == len(threats["threats"]), "Duplicate Wurdren hazard IDs")
+    require(game["start_scene"] in nodes, "Missing Wurdren start")
+    seen={game["start_scene"]}; queue=deque([game["start_scene"]])
+    while queue:
+        current=nodes[queue.popleft()]
+        require(current["essential_clues"], "Wurdren scene missing a lead: "+current["id"])
+        require(current.get("ending") or current["exits"], "Wurdren dead end: "+current["id"])
+        for hid in current["hazards"]:
+            require(hid in hazard_ids, "Unknown hazard: "+hid)
+        for dest in current["exits"]:
+            require(dest in nodes, "Unknown Wurdren exit: "+dest)
+            if dest not in seen:
+                seen.add(dest);queue.append(dest)
+    require(len(seen) == len(nodes), "Unreachable Wurdren scenes")
+    require(sum(bool(x.get("ending")) for x in nodes.values()) >= 2, "Wurdren needs distinct endings")
+    require(save["world"] == "Two Sons / 10Kings" and save["player_character_id"]=="wurdren", "Wrong active character/world")
+    require(save["current_scene_id"] in nodes and save["adventure_id"] == game["adventure_id"], "Wurdren save does not point to adventure")
+    require(save["player"]["hp"] == hero["hp_max"], "Opening HP mismatch")
+    require(save["status"] == "active" and save["save_revision"] == 0 and not save["roll_log"], "Wurdren setup cannot claim actions or dice")
+    print(f"PASS: Wurdren profile, {len(nodes)} scenes and {len(hazard_ids)} hazards checked")
+
 if __name__ == "__main__":
     validate()
+    validate_wurdren()
