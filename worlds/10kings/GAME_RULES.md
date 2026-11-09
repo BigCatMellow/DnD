@@ -2,6 +2,9 @@
 
 **Source priority:** current 10Kings canon > this game-specific profile > shared basic d20 checks and mundane turn structure in [CORE](../../rules/CORE.md) and [COMBAT](../../rules/COMBAT.md). Do not import the Ashen Road spell list, undead or other fantasy creatures, magic items, faction lore or companions.
 
+## Player-corrected identity
+Wurdren is a **dwarf cleric**, confirmed by the player during episode 01. Those facts supersede the earlier generic 'seasoned traveler' class label in this campaign. His precise faith, religious order, home, age and family remain open. A D&D cleric ordinarily has spells, whereas canonical Two Sons explicitly disallows spellcasting: **do not quietly erase his class or invent divine spells**. Treat the incompatibility as a pending mechanics decision, and continue with ordinary physical and social actions meanwhile. Until then, retain the existing provisional HP/AC/attacks and mundane abilities, but do not claim they are a completed D&D cleric build. Dwarf ancestry is player-established in this game; do not invent darkvision, poison resistance or racial history without a deliberate later adaptation.
+
 ## Dice
 An uncertain, consequential action uses d20 + ability/skill against DC 10 (routine under pressure), 13 (standard), 16 (hard) or 19 (exceptional). Advantage: roll twice, take higher; disadvantage: lower. A noncombat success by 5+ earns a concrete extra benefit. A failed essential investigation still produces a useful clue, usually at a cost. Never roll just because someone speaks, eats, walks or thinks. Announce the fictional stakes and show the roll/math. Obtain actual randomness from a reliable tool when possible, or ask the player to roll. Never invent dice results.
 

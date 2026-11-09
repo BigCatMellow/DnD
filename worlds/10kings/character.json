@@ -2,9 +2,9 @@
   "schema_version": "0.1",
   "id": "wurdren",
   "name": "Wurdren",
-  "status": "provisional game-only mechanics, biography open",
+  "status": "player-confirmed dwarf cleric; numerical rules remain provisional game-only",
   "level": 3,
-  "archetype": "seasoned traveler",
+  "archetype": "dwarf cleric / experienced traveler",
   "proficiency_bonus": 2,
   "ability_scores": {
     "str": 14,
@@ -74,6 +74,10 @@
   "notes": [
     "No exact age, origin or family defined.",
     "Stats, gear and money are playable fiction only.",
-    "No spellcasting."
-  ]
+    "Player confirmed Wurdren is a dwarf cleric on 2026-11-09; reflect in appearance and social identity without inventing his faith affiliation.",
+    "Do not convert this class to a non-cleric or grant divine spell effects without addressing the conflict with current Two Sons magic rules."
+  ],
+  "ancestry": "dwarf",
+  "class": "cleric",
+  "class_mechanics_status": "Cleric spellcasting and ancestry mechanics not yet reconciled with Two Sons no-spellcasting canon; do not assume spell slots or abilities in play without a later explicit mechanical decision"
 }
