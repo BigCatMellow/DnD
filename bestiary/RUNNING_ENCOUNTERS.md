@@ -5,7 +5,7 @@ A level-2 hero with full resources and Pip can plausibly face one moderate enemy
 
 - **Harmless pressure / tutorial:** one `ash_mite` or one `lantern_wisp`; can be avoided.
 - **Standard confrontation:** one `roadknife`, `mire_wolf` or `bell_husk`, with terrain, a negotiation angle or a weakness.
-- **Hard finale:** one `gaunt_toller` alone; the nearby bell can be disabled via established interaction, its objective is to protect the bell rather than kill intruders, and it will not chase beyond the tollhouse.
+- **Hard finale:** one `gaunt_toller` alone. **It is not a fair stand-up duel for every pregen.** Warn fragile heroes through observable danger that frontal combat could be fatal. Present a reachable lever, protected retreat, conversation, ally recruitment, and relay options **before** initiative. It protects the bell rather than hunting intruders and never chases beyond the tollhouse.
 - **Two-foe option:** two `ash_mite` only when hero has room, resources and clear retreat; do **not** add them as surprise reinforcements to an elite fight.
 - **No automatic attrition:** a player choosing careful negotiation or a successful bypass need not face a compensating combat.
 
