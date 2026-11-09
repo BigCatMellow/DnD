@@ -22,6 +22,7 @@ These are concise encounter-ready effects used by the **pregens**, not a full SR
 | Short sword | melee `1d6` piercing, finesse |
 | Long sword | melee `1d8` slashing, versatile `1d10` two-handed |
 | Dagger | melee or thrown 20/60 ft, `1d4` piercing, finesse |
+| Handaxe | melee or thrown 20/60 ft, `1d6` slashing |
 | Shortbow | ranged 80/320 ft, `1d6` piercing |
 | Longbow | ranged 150/600 ft, `1d8` piercing |
 | Quarterstaff | melee `1d6` bludgeoning, versatile `1d8` |
