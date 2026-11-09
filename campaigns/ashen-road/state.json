@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1",
+  "campaign_id": "ashen-road",
+  "adventure_id": "01-vanishing-mile",
+  "status": "not_started",
+  "player_character_id": null,
+  "sidekick_enabled": null,
+  "current_scene_id": "briefing",
+  "open_decision": "choose_hero",
+  "time": {
+    "day": 1,
+    "period": "late_afternoon",
+    "elapsed_turns": 0
+  },
+  "player": {
+    "hp": null,
+    "max_hp": null,
+    "hit_dice_remaining": null,
+    "spell_slots_remaining": null,
+    "ability_uses": {},
+    "inventory": null,
+    "silver": null,
+    "conditions": []
+  },
+  "companion": {
+    "hp": null,
+    "conditions": []
+  },
+  "clocks": {
+    "bell_attention": 0
+  },
+  "factions": {
+    "lantern_wardens": "neutral",
+    "farbound_survey": "neutral",
+    "reedwater_guild": "neutral"
+  },
+  "flags": {},
+  "known_clues": [],
+  "defeated_monsters": [],
+  "roll_log": [],
+  "safety": {
+    "lines": [],
+    "veils": []
+  },
+  "save_revision": 0,
+  "last_journal_entry": "setup-only",
+  "unresolved": [
+    "Choose a level-2 hero",
+    "Choose whether Pip accompanies you"
+  ]
+}
