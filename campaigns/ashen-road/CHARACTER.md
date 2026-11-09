@@ -1,7 +1,10 @@
-# Current character
+# Current character — Tamsin Vale
 
-**Not selected.** See [four prepared heroes](../../pregens/INDEX.md) and canonical [character data](../../pregens/characters.json).
+**Selected:** Tamsin Vale (level-2 Trailwarden / ranger). [Canonical base character](../../pregens/characters.json); [current resources](state.json).
 
-Player can freely supply name, pronouns, appearance, motive and relationships. Record those here once chosen. Mechanical base stats remain canonical in the pregen data; current HP, limited resources and inventory live in [state.json](state.json). Pip is optional and not assumed accepted.
+- HP **20/20**, AC **15**, Speed **30 feet**.
+- Longbow +5 (`1d8+3`), dagger +5 (`1d4+3`); Mark Quarry and Trail Sense.
+- Hero personal details may be customized before or during play without changing the base sheet.
+- **Pip Merrow undecided.** Do not place Pip in a scene or change companion resources until the player chooses.
 
-**Status:** campaign not started.
+**Campaign:** awaiting companion choice; the briefing scene has not yet been acted upon.

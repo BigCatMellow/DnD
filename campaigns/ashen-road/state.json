@@ -2,24 +2,36 @@
   "schema_version": "0.1",
   "campaign_id": "ashen-road",
   "adventure_id": "01-vanishing-mile",
-  "status": "not_started",
-  "player_character_id": null,
+  "status": "character_selected",
+  "player_character_id": "tamsin",
   "sidekick_enabled": null,
   "current_scene_id": "briefing",
-  "open_decision": "choose_hero",
+  "open_decision": "choose_pip",
   "time": {
     "day": 1,
     "period": "late_afternoon",
     "elapsed_turns": 0
   },
   "player": {
-    "hp": null,
-    "max_hp": null,
-    "hit_dice_remaining": null,
-    "spell_slots_remaining": null,
-    "ability_uses": {},
-    "inventory": null,
-    "silver": null,
+    "hp": 20,
+    "max_hp": 20,
+    "hit_dice_remaining": 2,
+    "spell_slots_remaining": 0,
+    "ability_uses": {
+      "Mark Quarry": 1,
+      "Trail Sense": 1
+    },
+    "inventory": [
+      "longbow",
+      "20 arrows",
+      "dagger",
+      "leather armor",
+      "healing potion",
+      "field compass",
+      "rope 50 ft",
+      "2 rations"
+    ],
+    "silver": 10,
     "conditions": []
   },
   "companion": {
@@ -42,10 +54,9 @@
     "lines": [],
     "veils": []
   },
-  "save_revision": 0,
-  "last_journal_entry": "setup-only",
+  "save_revision": 1,
+  "last_journal_entry": "setup-character-selection",
   "unresolved": [
-    "Choose a level-2 hero",
-    "Choose whether Pip accompanies you"
+    "Choose whether Pip accompanies Tamsin"
   ]
 }

@@ -4,3 +4,6 @@
 A campaign world, level-2 hero options, house rules and first adventure have been prepared. **No player character has been chosen; no dice have been rolled; no in-world actions have happened.** The opening scene exists as a player brief, not a completed scene.
 
 After player choice, add chronologically numbered entries (`S01-T001`, etc.) with: scene; player action; known dice result and modifiers; resources/clock/flags changed; new canon; next pending decision. Do not use this journal for unrevealed GM secrets.
+
+## SETUP — Tamsin chosen
+The player selected **Tamsin Vale** as the campaign protagonist. Base sheet and full starting resources were copied from the canonical pregen. **Whether Pip accompanies Tamsin remains an open player decision.** No die rolls, in-world actions or elapsed turns yet.
