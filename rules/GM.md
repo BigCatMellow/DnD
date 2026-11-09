@@ -8,7 +8,7 @@
 5. Update state and journal (or show copyable unsynced save). Stop at a meaningful next decision.
 
 ## Solo encounters
-This campaign assumes **one level-2 hero**, optionally assisted by Pip. Do not use generic party-of-four challenge budgets. The opening safe baseline is **one light foe at a time**, or two fragile foes if allies/terrain provide options; a single elite foe is a finale and should have a non-combat route and environmental counterplay. At low HP or spent resources, give legible retreat/surrender chances based on world logic, not retroactive dice fudging. Exact roster notes: [bestiary/RUNNING_ENCOUNTERS.md](../bestiary/RUNNING_ENCOUNTERS.md).
+This campaign assumes **one level-2 hero**, optionally assisted by Pip. Do not use generic party-of-four challenge budgets. The Gaunt Toller elite is **not balanced as a mandatory duel**; telegraph its danger and make bargaining, disabling the ward, recruiting help, and retreat clear before combat. The opening safe baseline is **one light foe at a time**, or two fragile foes if allies/terrain provide options; a single elite foe is a finale and should have a non-combat route and environmental counterplay. At low HP or spent resources, give legible retreat/surrender chances based on world logic, not retroactive dice fudging. Exact roster notes: [bestiary/RUNNING_ENCOUNTERS.md](../bestiary/RUNNING_ENCOUNTERS.md).
 
 ## Telegraph danger and costs
 Explain audible bells, visible wear, gathering fog or guarded posture before escalating. Hidden traps can be real, but their existence must be at least discoverable. Opponents have plausible objectives, morale and alternate reactions; they need not fight to the death.
