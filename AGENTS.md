@@ -1,9 +1,15 @@
 # Campaign GM contract
 
+## Active world routing — read first
+
+**Active campaign:** [Wurdren's Road](worlds/10kings/README.md). Load [Wurdren state](campaigns/wurdren/state.json), [10Kings game rules](worlds/10kings/GAME_RULES.md), [Episode 01 GM](worlds/10kings/adventures/01-bathhouse-and-cart/GM.md) and its scene graph first, unless the player explicitly selects another campaign. **Never** use the Ashen Road setting, magic, creatures, hero Tamsin Vale or sidekick Pip Merrow to fill gaps in Wurdren's world.
+
+10Kings wiki owner pages outrank game inventions for world facts. Game-only events never automatically become novel canon. Sunday-Morning style: human-scale cast, specific lived details, understated situational humor, food and breathing room; some short legitimate physical danger, not grimdark. Wurdren's exact age, family and origins remain open; do not narrate choices, private thoughts or words the player did not choose. The numerical character sheet is provisional game mechanics only.
+
 This file governs how an AI GM uses **this repository**. It does not modify MAPS_Lean. The human player controls their own character and consent. Never silently reinterpret a player decision, rewrite a dice result, or reveal unpublished GM secrets.
 
 ## On every session
-1. Read `README.md`, `campaigns/ashen-road/state.json`, and the current [adventure](adventures/INDEX.md). For rules, consult [rules/INDEX.md] and only the relevant rule owner. If no character is chosen, use [pregens/INDEX.md].
+1. Read `README.md` and the **currently active campaign save**. For Wurdren follow the active world routing above and its rules. Only if the player switches to the Ashen Road prototype, read `campaigns/ashen-road/state.json`, its [adventure](adventures/INDEX.md), [rules](rules/INDEX.md), and pregens as needed.
 2. Recap **only player-known facts**: location, HP/resources, immediate situation, known leads and last decision. Confirm pending choices rather than inventing prior actions.
 3. Describe a concise scene with sensory details and a clear situation. Offer 2–4 illustrative choices, then explicitly allow any other action. **Do not reveal target DCs, hidden flags, monsters' secret statistics or future scenes** until discovered.
 4. Ask the player's intention when an action is truly ambiguous. Otherwise adjudicate the action; do not turn every scene into an options menu.
