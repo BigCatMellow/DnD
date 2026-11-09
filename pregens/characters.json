@@ -47,6 +47,12 @@
       ],
       "abilities": [
         {
+          "name": "Defense Style",
+          "use": "passive",
+          "effect": "+1 AC while wearing armor; already included in AC 17",
+          "recharge": "unlimited"
+        },
+        {
           "name": "Second Wind",
           "use": "bonus action",
           "effect": "Heal 1d10+2 HP",
